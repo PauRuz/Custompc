@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F0F4FF; /* Fondo azul claro */
+    color: #333333; /* Texto oscuro para buena legibilidad */
+}
+
+header {
+    background-color: #1A73E8; /* Fondo azul fuerte */
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #FF6F61; /* Enlace rosado */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #FF4C4C; /* Rosado más claro al pasar el ratón */
+}
+
+section {
+    padding: 20px;
+    border-bottom: 1px solid #E0E0E0; /* Línea separadora clara */
+}
+
+h2 {
+    color: #1A73E8; /* Azul fuerte para encabezados */
+}
+
+footer {
+    background-color: #1A73E8; /* Fondo azul del pie de página */
+    text-align: center;
+    padding: 10px;
+    color: white; /* Texto blanco en el pie de página */
+}
+nav ul li a {
+    color: #FF6F61; /* Enlace rosado */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s; /* Transición suave al cambiar de color */
+}
+
+nav ul li a:hover {
+    color: #FF4C4C; /* Rosado más claro al pasar el ratón */
+}
+
+h2 {
+    cursor: pointer; /* Cambiar el cursor a mano para los encabezados */
+    transition: color 0.3s; /* Transición suave al cambiar de color */
+}
+
+h2:hover {
+    color: #FF4C4C; /* Cambiar a rosado más claro al pasar el ratón */
+}
+

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custompc - Muntatge i Reparació d'Ordinadors</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function toggleSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            section.style.display = section.style.display === "none" ? "block" : "none";
+        }
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #2B2B2B;
+            color: #F0F0F0;
+        }
+
+        header {
+            background-color: #1A252F;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #3498DB;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #1ABC9C;
+        }
+
+        h2 {
+            cursor: pointer;
+            transition: color 0.3s;
+            color: #EAEAEA;
+        }
+
+        h2:hover {
+            color: #1ABC9C;
+        }
+
+        section {
+            padding: 20px;
+            border-bottom: 1px solid #444;
+            background-color: #333333;
+        }
+
+        footer {
+            background-color: #1A252F;
+            text-align: center;
+            padding: 10px;
+            color: white;
+        }
+
+        a.special-link {
+            color: #00BFFF;
+            font-weight: bold;
+            text-decoration: underline;
+            transition: color 0.3s;
+        }
+
+        a.special-link:hover {
+            color: #87CEEB;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Benvinguts a Custompc</h1>
+        <nav>
+            <ul>
+                <li><a href="javascript:void(0);" onclick="toggleSection('serveis-detall')">Els nostres Serveis</a></li>
+                <li><a href="javascript:void(0);" onclick="toggleSection('nosaltres-detall')">Sobre Nosaltres</a></li>
+                <li><a href="javascript:void(0);" onclick="toggleSection('contacte-detall')">Contacte</a></li>
+                <li><a href="javascript:void(0);" onclick="toggleSection('areas-detall')">Àrees de treball</a></li>
+                <li><a href="javascript:void(0);" onclick="toggleSection('preus-detall')">Preus</a></li>
+                <li><a href="javascript:void(0);" onclick="toggleSection('ubicacio-detall')">Ubicació</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="serveis">
+        <h2 onclick="toggleSection('serveis-detall')">Els nostres Serveis</h2>
+        <div id="serveis-detall" style="display: none;">
+            <p>Fes clic a "Els nostres Serveis" per veure tots els serveis que oferim:</p>
+            <ul>
+                <li>Instal·lació d'ISO com Windows, Ubuntu, Linux...</li>
+                <li>Instal·lació de drivers, incloent la instal·lació o actualització de la BIOS</li>
+                <li>Instal·lació de drivers de GPU i CPU</li>
+                <li>Muntatge de l'ordinador</li>
+                <li>Manteniment de l'ordinador: t'ajudarem a arreglar els errors de maquinari o programari que puguin haver estat creats o produïts pel nostre muntatge</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="nosaltres">
+        <h2 onclick="toggleSection('nosaltres-detall')">Sobre Nosaltres</h2>
+        <div id="nosaltres-detall" style="display: none;">
+            <p>Custompc és la teva millor opció per tenir l'ordinador dels teus somnis. Amb anys d'experiència, el nostre equip garanteix solucions ràpides i efectives.</p>
+        </div>
+    </section>
+
+    <section id="contacte">
+        <h2 onclick="toggleSection('contacte-detall')">Contacte</h2>
+        <div id="contacte-detall" style="display: none;">
+            <p>Pots contactar-nos a través dels següents canals:</p>
+            <ul>
+                <li><a class="special-link" href="mailto:custompc@gmail.com">custompc@gmail.com</a></li>
+                <li>+34-638-819-442</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="areas">
+        <h2 onclick="toggleSection('areas-detall')">Àrees de treball</h2>
+        <div id="areas-detall" style="display: none;">
+            <p>Els nostres serveis estan disponibles en:</p>
+            <ul>
+                <li>Rubí</li>
+                <li>Barcelona</li>
+                <li>Sant Cugat del Vallès</li>
+                <li>Terrassa</li>
+                <li>Manresa</li>
+                <li>Sabadell</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="preus">
+        <h2 onclick="toggleSection('preus-detall')">Preus</h2>
+        <div id="preus-detall" style="display: none;">
+            <p>Els preus dels nostres serveis:</p>
+            <ul>
+                <li>Muntatge de l'ordinador: 50€</li>
+                <li>Manteniment de l'ordinador: 20€</li>
+                <li>Instal·lació de drivers: 15€</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="ubicacio">
+        <h2 onclick="toggleSection('ubicacio-detall')">Ubicació</h2>
+        <div id="ubicacio-detall" style="display: none;">
+            <p>Carrer de Valeta, 28, 08906 L'Hospitalet de Llobregat, Barcelona</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Custompc. Tots els drets reservats i les cookies necesarias per a la navegació.</p>
+
+    </footer>
+</body>
+</html>
